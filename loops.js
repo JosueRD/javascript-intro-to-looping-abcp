@@ -1,11 +1,11 @@
-function forLoop(array) {
-var array=[]
-for (let x=1; x<25; x++){
-  if (x===1) {
-    array.push= ( "I am 1 strange loop" )
-  }
-  else {
-    array.push=("I am " + x + " strange loops.")
-  }
+function forLoop (array) {
+for (let i=1; i<25; i++){
+  array.push(`I am ${i} strange loop${i === 1 ? '' : 's'}.`)
 } return array
 }
+
+function whileLoop (n) {
+   while (n > 0) {
+     console.log(--n)
+   }
+   return 'done'
